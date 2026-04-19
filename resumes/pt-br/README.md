@@ -47,4 +47,14 @@ Estas dicas foram adaptadas do artigo da [Harvard](https://careerservices.fas.ha
 
 ---
 
-Para dúvidas sobre o template LaTeX, consulte os comentários no arquivo `curriculo.tex`.
+Para dúvidas sobre o template Typst, consulte os comentários no arquivo `curriculo.typ`.
+
+## 🛠️ Compilando Localmente
+
+Para compilar este currículo na sua máquina, instale o [Typst](https://typst.app/docs/) e execute a partir da **raiz do repositório**:
+
+```bash
+typst compile --root . resumes/pt-br/curriculo.typ
+```
+
+> 💡 O `--root .` é necessário porque o currículo importa um template compartilhado de `resumes/template.typ`. Você também pode usar `typst watch --root . resumes/pt-br/curriculo.typ` para pré-visualização ao vivo.

@@ -83,3 +83,13 @@ You can also find some cool resume examples at:
 - [MIT Sample resumes and cover letters](https://capd.mit.edu/resources/sample-resumes/)
 - [Harvard Create a Resume/CV or Cover Letter](https://careerservices.fas.harvard.edu/channels/create-a-resume-cv-or-cover-letter/#uc_resource_tiles-4)
 - [Harvard College Paragraph Resume Template](https://careerservices.fas.harvard.edu/resources/harvard-college-paragraph-resume-template/)
+
+## 🛠️ Building Locally
+
+To compile this resume on your machine, install [Typst](https://typst.app/docs/) and run from the **repository root**:
+
+```bash
+typst compile --root . resumes/en/resume.typ
+```
+
+> 💡 The `--root .` flag is required because the resume imports a shared template from `resumes/template.typ`. You can also use `typst watch --root . resumes/en/resume.typ` for live preview.
