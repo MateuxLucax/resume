@@ -12,75 +12,73 @@
 #import "../template.typ": resume, cventry
 
 #show: resume.with(
-  title: "CV Seu Nome",
-  author: "Seu Nome",
+  title: "CV Mateus Lucas Cruz Brandt",
+  author: "Mateus Lucas Cruz Brandt",
   lang: "pt",
   region: "br",
 )
 
 // --- CABEÇALHO ---
-// Substitua por suas informações pessoais
 #align(center)[
-  #text(size: 17.28pt, weight: "bold")[Nome Completo]
+  #text(size: 17pt, weight: "bold")[Mateus Lucas Cruz Brandt]
   #v(0.1cm)
-  Cidade, Estado
-  #sym.bullet
-  #link("mailto:seu.email@exemplo.com")[seu.email\@exemplo.com]
-  #sym.bullet
-  #link("https://linkedin.com/in/usuario")[linkedin.com/in/usuario]
-  #sym.bullet
-  #link("https://github.com/usuario")[github.com/usuario]
+  Santa Catarina, Brasil
+  #box[#sym.bullet Email: #link("mailto:mateuxlucax@gmail.com")[mateuxlucax\@gmail.com]]
+  #box[#sym.bullet #link("https://www.linkedin.com/in/mateusbrandt")[linkedin.com/in/mateusbrandt]]
+  #box[#sym.bullet #link("https://github.com/mateuxlucax")[github.com/mateuxlucax]]
 ]
 
 // --- SEÇÕES ---
 
 = Atividades de Liderança
 
-// Inclua trabalho voluntário, ligas acadêmicas ou cargos de liderança
-#cventry("Nome da Empresa/Organização", "Localização (ex: Remoto ou Estado, País)", "Seu Cargo/Posição", "Data de Início - Data de Término (ex: Jan 2024 - Atual)")
-// Use verbos de ação do README - quantifique seu impacto quando possível
-- Descreva uma conquista significativa de liderança com métricas específicas.
-- Destaque como você gerenciou equipes, liderou iniciativas ou impulsionou resultados.
-- Mostre impacto na organização ou comunidade que você serviu.
+#cventry("Effecti", "Remoto", "Líder Técnico", "Set 2024 - Set 2025")
+- Liderou uma equipe de 3 desenvolvedores na manutenção e aprimoramento de um sistema crítico de processamento de mensagens baseado em microsserviços, processando mais de 20.000 transações por minuto.
+- Conduziu iniciativas de otimização de desempenho que reduziram os custos operacionais em 50% por meio de algoritmos mais eficientes e alocação estratégica de recursos.
+- Mentorou desenvolvedores juniores em arquitetura de microsserviços e boas práticas, acelerando o crescimento profissional e melhorando a qualidade das revisões de código.
 
 // ------
 
 = Experiência
 
-// Liste suas experiências profissionais ou acadêmicas, da mais recente para a mais antiga
-#cventry("Nome da Empresa/Organização", "Localização (ex: Remoto ou Estado, País)", "Cargo (ex: Engenheiro de Software, Analista de Dados)", "Data de Início - Data de Término")
-// Foque em conquistas, não apenas na parte técnica - use o método STAR (Situação, Tarefa, Ação, Resultado)
-- Alcancei [resultado específico] através de [ação tomada], resultando em [impacto quantificado].
-- Desenvolvi/Construí/Criei [o que você fez] usando [tecnologias/métodos], resultando em [benefício].
-- Colaborei com [tamanho/tipo da equipe] para [alcançar o quê], melhorando [métrica] em [porcentagem/quantidade].
+#cventry("Asaas", "Remoto", "Engenheiro de Software Sênior", "Set 2025 - Presente")
+- Desenvolveu integrações com entidades regulatórias governamentais e jurídicas, garantindo conformidade.
+- Arquitetou e desenvolveu uma Prova de Conceito para automação do fluxo do SCR (Sistema de Informações de Créditos).
+- Conduziu múltiplas decisões arquiteturais e de engenharia dentro da equipe.
 
-#cventry("Nome da Empresa/Organização", "Localização (ex: Remoto ou Estado, País)", "Cargo (ex: Desenvolvedor Júnior, Assistente de Pesquisa)", "Data de Início - Data de Término")
-- Use verbos ativos da tabela de verbos de ação no README.md
-- Quantifique suas conquistas sempre que possível (números, porcentagens, prazos)
-- Mostre progressão e responsabilidade crescente entre os cargos
+#cventry("Effecti", "Remoto", "Arquiteto de Software", "Jun 2025 - Set 2025")
+- Liderou iniciativas de otimização de infraestrutura, reduzindo custos operacionais em 50%.
+- Mentorou desenvolvedores e apoiou o crescimento técnico da equipe por meio de revisões de código e sessões de compartilhamento de conhecimento.
 
-#cventry("Universidade/Instituição de Pesquisa", "Localização (ex: Remoto ou Estado, País)", "Função (ex: Pesquisador de Graduação, Monitor)", "Data de Início - Data de Término")
-- Inclua pesquisa, trabalho acadêmico ou projetos que demonstrem habilidades técnicas
-- Destaque publicações, apresentações ou descobertas significativas
+#cventry("Effecti", "Remoto", "Desenvolvedor Sênior", "Set 2024 - Mai 2025")
+- Coordenou uma equipe de desenvolvimento backend, estabelecendo diretrizes técnicas e garantindo a entrega de soluções de alta qualidade.
+- Otimizou componentes de infraestrutura, resultando em uma redução de mais de 75% nos custos de infraestrutura.
+- Aprimorou a funcionalidade de destaque de mensagens (Apache Lucene) dentro da plataforma de mensageria, aumentando a capacidade de 3.000 para 20.000 mensagens por minuto.
+
+#cventry("Effecti", "Remoto", "Desenvolvedor", "Jun 2022 - Ago 2024")
+- Refatorou e otimizou consultas PostgreSQL, reduzindo o tempo de resposta em mais de 99% em transações-chave.
+- Implementou Elasticsearch para busca full-text escalável, reduzindo a latência P99 de mais de 5s para menos de 500ms.
+- Contribuiu em cerimônias Scrum incluindo planejamento de sprints, estimativas e revisões de código.
+
+#cventry("Effecti", "Remoto", "Desenvolvedor Júnior", "Ago 2020 - Mai 2022")
+- Desenvolveu funcionalidades backend em Java, abrangendo design, implementação, testes e manutenção.
+- Construiu APIs REST para integração de serviços internos, contribuindo para a arquitetura de microsserviços.
+- Projetou e desenvolveu uma aplicação mobile multiplataforma utilizando Flutter para Android e iOS, implementando monitoramento, análise comportamental e testes automatizados.
 
 // ------
 
 = Habilidades
 
-// Mantenha esta seção concisa e use o máximo de palavras-chave
-// que fazem sentido para a vaga que você deseja.
-- *Técnicas:* Liste suas linguagens de programação, frameworks, ferramentas e metodologias
-- *Idiomas:* Português (Nativo), Inglês (Nível de Proficiência), Terceiro Idioma (Nível de Proficiência)
+- *Linguagens & Frameworks:* Java (Spring Boot, Hibernate), Quarkus, TypeScript, Go, Flutter, Kotlin, SwiftUI, Vue, Svelte, Next.js
+- *Bancos de Dados & Armazenamento:* PostgreSQL (tuning & otimização), Elasticsearch, SQLite, Firebase, Apache Lucene
+- *Arquitetura & DevOps:* Microsserviços, APIs RESTful, Apache Kafka, Docker, Kubernetes, AWS (EC2, RDS), GCP, CI/CD (GitLab CI/CD, Jenkins)
+- *Metodologias:* Scrum, Kanban, Desenvolvimento Ágil
+- *Idiomas:* Português (Nativo), Inglês (Fluente)
 
 // ------
 
-// !!!!!!!!!!!!!!!!!!!!!!
-// Mude esta seção para o começo, depois do cabeçalho e antes
-// das suas experiências se você está procurando sua primeira
-// vaga ou algum estágio. Do contrário, deixe como está.
-// !!!!!!!!!!!!!!!!!!!!!!
-
 = Educação
 
-// Formação mais recente primeiro
-#cventry("Nome da Sua Universidade", "Localização (ex: Remoto ou Estado, País)", "Título do Seu Curso (ex: Bacharelado em Ciência da Computação)", "Data de Início - Data de Término (ex: Jan 2020 - Dez 2024)")
+#cventry("Universidade do Estado de Santa Catarina", "Ibirama, Brasil", "Bacharelado em Engenharia de Software", "Jan 2020 - Dez 2024")
+
+#cventry("Instituto Federal Catarinense", "Rio do Sul, Brasil", "Diploma Técnico em Desenvolvimento de Software", "Jan 2017 - Dez 2019")
